@@ -18,7 +18,7 @@ TEST_PATH = 'data/job_postings_test.csv'
 SUB_PATH = 'data/job_postings_sample_submission.csv'
 OUT_PATH = 'submission.csv'
 
-MODEL = 'svm'
+MODEL = 'cnn'
 
 MODELS = {
     'xgb':  (train_xgb,  eval_xgb,  'XGBoost'),
