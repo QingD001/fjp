@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 
 
-TEXT_COLS = ['title', 'company_profile', 'description', 'requirements', 'benefits']
+# Put the job-specific fields first. TextCNN truncates long documents, so a long
+# generic company profile should not crowd out the description and requirements.
+TEXT_COLS = ['title', 'description', 'requirements', 'benefits', 'company_profile']
 CATEGORY_COLS = [
     'employment_type',
     'required_experience',
